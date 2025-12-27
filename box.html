@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 10px;
+        }
+
+        .bx {
+            width: 250px;
+            height: 200px;
+            /* width: 50vw;
+            height: 100vh; */
+            padding: 10px;
+            background-color: red;
+            overflow: auto;
+        }
+
+        .bx1 {
+            width: 50%;
+            height: 200px;
+            background-color: rosybrown;
+            margin-top: 20px;
+        }
+
+        .c-bx1 {
+            width: 70%;
+            height: 100px;
+            background-color: black;
+        }
+
+        .bx2 {
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+            background-color: red;
+        }
+
+        .img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            filter: blur(2px) grayscale(100%);
+        }
+
+        .bx3 {
+            height: 100px;
+            width: 200px;
+            margin-top: 20px;
+            background-color: pink;
+            transition: all 1s ease-in-out 0s;
+        }
+
+        .bx3:hover {
+            height: 200px;
+            width: 250px;
+            background-color: red;
+        }
+
+        .bx4{
+            height: 100px;
+            width: 200px;
+            margin-top: 20px;
+            background-color: red;
+            overflow: hidden;
+        }
+        .img1{
+            width: 100%;
+            transition: all 1s ease-in-out 0s;
+        }
+        .img1:hover{
+            transform: scale(2);
+        }
+
+        .bx5{
+            height: 100px;
+            width: 200px;
+            margin-top: 20px;
+            background-color: blueviolet;
+            animation: anima 3s ease-in-out 0s infinite alternate-reverse forwards; 
+            /* direction fill-mode; */
+        }
+        @keyframes anima {
+            20%{
+                background-color: red;
+            }
+            50%{
+                /* height: 200px;
+                transform: translateX(20px);  */
+                width: 500px;
+            }
+            70%{
+                background-color: black;
+            }
+            100%{
+                border-radius: 20px;
+            }
+        }
+
+        .bx6{
+            height: 500px;
+            width: 500px;
+            margin-top: 20px;
+            background-image: url(https://images.unsplash.com/photo-1758599669009-5a9002c09487?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D);
+            color: white;
+            background-repeat: no-repeat;
+            /* border: 5px solid red; */
+            background-size: cover;
+            background-position: top;
+        }
+        .bx6 h1{
+            backdrop-filter: blur(20px);
+            position: relative;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bx">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aliquid molestiae corrupti quaerat,
+            obcaecati nisi vel, beatae vero iusto laborum labore autem natus! Cupiditate excepturi unde, quam error
+            ullam numquam rerum rem voluptates sit, sunt odio quis sequi vel maxime qui nesciunt recusandae quos
+            voluptatibus consequatur dolores eum perspiciatis fuga. </p>
+    </div>
+
+    <div class="bx1">
+        <div class="c-bx1">
+
+        </div>
+    </div>
+
+    <div class="bx2">
+        <img class="img" src="https://images.unsplash.com/photo-1761839258045-6ef373ab82a7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+            alt="picture loading">
+    </div>
+
+    <div class="bx3">
+
+    </div>
+
+    <div class="bx4">
+        <img class="img1" src="https://plus.unsplash.com/premium_photo-1766750045504-e142bd8ee057?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8" alt="image">
+    </div>
+
+    <div class="bx5">
+
+    </div>
+
+    <div class="bx6">
+        <h1>abhishek</h1>
+    </div>
+</body>
+
+</html>
