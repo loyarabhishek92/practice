@@ -67,47 +67,53 @@
             background-color: red;
         }
 
-        .bx4{
+        .bx4 {
             height: 100px;
             width: 200px;
             margin-top: 20px;
             background-color: red;
             overflow: hidden;
         }
-        .img1{
+
+        .img1 {
             width: 100%;
             transition: all 1s ease-in-out 0s;
         }
-        .img1:hover{
+
+        .img1:hover {
             transform: scale(2);
         }
 
-        .bx5{
+        .bx5 {
             height: 100px;
             width: 200px;
             margin-top: 20px;
             background-color: blueviolet;
-            animation: anima 3s ease-in-out 0s infinite alternate-reverse forwards; 
+            animation: anima 3s ease-in-out 0s infinite alternate-reverse forwards;
             /* direction fill-mode; */
         }
+
         @keyframes anima {
-            20%{
+            20% {
                 background-color: red;
             }
-            50%{
+
+            50% {
                 /* height: 200px;
                 transform: translateX(20px);  */
                 width: 500px;
             }
-            70%{
+
+            70% {
                 background-color: black;
             }
-            100%{
+
+            100% {
                 border-radius: 20px;
             }
         }
 
-        .bx6{
+        .bx6 {
             height: 500px;
             width: 500px;
             margin-top: 20px;
@@ -118,10 +124,42 @@
             background-size: cover;
             background-position: top;
         }
-        .bx6 h1{
+
+        .bx6 h1 {
             backdrop-filter: blur(20px);
             position: relative;
             top: 50px;
+            text-align: center;
+        }
+
+        .flex-box{
+            margin-top: 20px;
+            max-width: 700px;
+            height: 500px;
+            /* background-color: pink; */
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .item1{
+            background-color: red;
+        }
+        .item2{
+            background-color: green;
+        }
+        .item3{
+            background-color: blueviolet;
+        }
+        .item4{
+            background-color: yellow;
+        }
+        .item5{
+            background-color: violet;
+        }
+        .item6{
+            background-color: teal;
         }
     </style>
 </head>
@@ -141,7 +179,8 @@
     </div>
 
     <div class="bx2">
-        <img class="img" src="https://images.unsplash.com/photo-1761839258045-6ef373ab82a7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+        <img class="img"
+            src="https://images.unsplash.com/photo-1761839258045-6ef373ab82a7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
             alt="picture loading">
     </div>
 
@@ -150,7 +189,9 @@
     </div>
 
     <div class="bx4">
-        <img class="img1" src="https://plus.unsplash.com/premium_photo-1766750045504-e142bd8ee057?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8" alt="image">
+        <img class="img1"
+            src="https://plus.unsplash.com/premium_photo-1766750045504-e142bd8ee057?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8"
+            alt="image">
     </div>
 
     <div class="bx5">
@@ -159,6 +200,27 @@
 
     <div class="bx6">
         <h1>abhishek</h1>
+    </div>
+
+    <div class="flex-box">
+        <div class="item item1">
+            <h2>Box1</h2>
+        </div>
+        <div class="item item2">
+            <h2>Box2</h2>
+        </div>
+        <div class="item item3">
+            <h2>Box3</h2>
+        </div>
+        <div class="item item4">
+            <h2>Box4</h2>
+        </div>
+        <div class="item item5">
+            <h2>Box5</h2>
+        </div>
+        <div class="item item6">
+            <h2>Box6</h2>
+        </div>
     </div>
 </body>
 
